@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         try {
             // Faz a requisição à API
-            const response = await fetch(`http://localhost:5000/download?url=${encodeURIComponent(url)}`);
+            const response = await fetch(`https://api-youtube-mp3-1.onrender.com/download?url=${encodeURIComponent(url)}`);
 
             if (!response.ok) {
                 throw new Error("Erro ao baixar o arquivo. Verifique a URL ou o servidor.");
